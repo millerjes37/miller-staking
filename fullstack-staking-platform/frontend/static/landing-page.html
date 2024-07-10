@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller Staking - Revolutionizing Horse Race Staking</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(to right, #1a5f7a, #2980b9);
+            color: #ffffff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1534446036949-e57cde1e4f1a?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #f39c12;
+            color: #ffffff;
+            padding: 10px 30px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #e67e22;
+        }
+        .features {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        .feature i {
+            font-size: 3rem;
+            color: #1a5f7a;
+            margin-bottom: 1rem;
+        }
+        .testimonials {
+            background: #1a5f7a;
+            color: #ffffff;
+            padding: 4rem 0;
+        }
+        .testimonial {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .cta {
+            background: #f39c12;
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        footer {
+            background: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Miller Staking</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="login2.html" class="btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content container">
+            <h2>Revolutionizing Horse Race Staking</h2>
+            <p>Simplify your stakes, maximize your success. Join the future of horse racing management.</p>
+            <a href="login2.html" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Miller Staking?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-horse"></i>
+                    <h3>Effortless Horse Management</h3>
+                    <p>Easily track and manage your horses' information and race entries.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Comprehensive Race Series Tracking</h3>
+                    <p>Stay on top of multiple race series with our intuitive tracking system.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Streamlined Payments</h3>
+                    <p>Secure and simple payment processing for all your racing stakes.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Performance Analytics</h3>
+                    <p>Gain insights into your horses' performance with detailed analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"Miller Staking has transformed how I manage my racing stakes. It's user-friendly and incredibly efficient!"</p>
+                <p><strong>- John D., Professional Horse Trainer</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Elevate Your Horse Racing Experience?</h2>
+            <p>Join Miller Staking today and take your racing management to the next level.</p>
+            <a href="login2.html" class="btn">Sign Up Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Miller Staking. All rights reserved.</p>
+            <nav>
+                <a href="terms-of-service.html">Terms of Service</a> | 
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

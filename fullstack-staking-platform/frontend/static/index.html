@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller Staking - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(to right, #1a5f7a, #2980b9);
+            color: #ffffff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            z-index: 2;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #f39c12;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #e67e22;
+        }
+        .feature-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        .feature-box {
+            flex: 1;
+            background: #ffffff;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+        .feature-box h3 {
+            color: #1a5f7a;
+        }
+        .latest-news {
+            background: #ffffff;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        footer {
+            background: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Miller Staking</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="horses.html">Horses</a></li>
+                    <li><a href="races.html">Races</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Miller Staking</h2>
+            <p>Your premier platform for managing horse racing stakes and entries.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="feature-boxes">
+            <div class="feature-box">
+                <h3>Manage Horses</h3>
+                <p>Keep track of all your horses and their race entries. Easily update information and view performance history.</p>
+                <a href="horses.html" class="btn">View Horses</a>
+            </div>
+            <div class="feature-box">
+                <h3>Track Races</h3>
+                <p>Stay updated on upcoming races, stake deadlines, and results. Never miss an important date again.</p>
+                <a href="races.html" class="btn">View Races</a>
+            </div>
+            <div class="feature-box">
+                <h3>Billing Preferences</h3>
+                <p>Set your preferred payment method for stakes and fees. Manage your financial transactions with ease.</p>
+                <a href="profile.html" class="btn">Manage Profile</a>
+            </div>
+        </section>
+
+        <section class="latest-news">
+            <h3>Latest Updates</h3>
+            <ul>
+                <li>New race series added: Summer Classic 2024</li>
+                <li>Reminder: Stake deadline for Spring Cup is approaching</li>
+                <li>Congratulations to winners of the recent Winter Challenge</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Miller Staking. All rights reserved.</p>
+            <nav>
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

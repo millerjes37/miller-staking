@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller Staking - Horses</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(to right, #1a5f7a, #2980b9);
+            color: #ffffff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            color: #f39c12;
+        }
+        main {
+            padding: 2rem 0;
+        }
+        h2 {
+            color: #1a5f7a;
+        }
+        .horse-card {
+            background: #ffffff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .horse-card:hover {
+            transform: translateY(-5px);
+        }
+        .horse-card h3 {
+            color: #1a5f7a;
+            margin-top: 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #f39c12;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #e67e22;
+        }
+        form {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        footer {
+            background: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Miller Staking</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="horses.html" class="active">Horses</a></li>
+                    <li><a href="races.html">Races</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Your Horses</h2>
+        <div id="horses-list">
+            <div class="horse-card">
+                <h3>Thunderbolt</h3>
+                <p><strong>Owner ID:</strong> 12345</p>
+                <p><strong>Race Series:</strong> Spring Cup, Summer Classic</p>
+                <p><strong>Age:</strong> 5 years</p>
+                <p><strong>Breed:</strong> Thoroughbred</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="horse-card">
+                <h3>Silver Arrow</h3>
+                <p><strong>Owner ID:</strong> 12345</p>
+                <p><strong>Race Series:</strong> Winter Challenge</p>
+                <p><strong>Age:</strong> 4 years</p>
+                <p><strong>Breed:</strong> Arabian</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+        
+        <h3>Add a New Horse</h3>
+        <form id="add-horse-form">
+            <input type="text" id="horse-name" placeholder="Horse Name" required>
+            <input type="number" id="owner-id" placeholder="Owner ID" required>
+            <input type="text" id="breed" placeholder="Breed" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <button type="submit" class="btn">Add Horse</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Miller Staking. All rights reserved.</p>
+            <nav>
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
